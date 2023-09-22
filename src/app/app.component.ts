@@ -11,6 +11,10 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'Store Mil';
-  imgParent = ''
- //"ahttps://www.w3schools.com/howto/img_avatar.png"
+  imgParent = ''   //Dejamos intencionalmente vacia para que en el hijo entre a error
+
+  onLoaded(img:string){
+    console.log('cargo imagen, comunicacion externa se entero el padre', img)
+  }
+
 }

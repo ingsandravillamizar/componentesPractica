@@ -1,2 +1,7 @@
 <p> <input type="text" [(ngModel)]="title"></p>
-<app-img [img]="imgParent"  [titulo]="title"></app-img>
+<app-img (loaded)="onLoaded($event)"   [img]="imgParent"  [titulo]="title"></app-img>
+
+<!-- (loaded)="Onloaded()" Escuchamos el evento loaded y mandamos a la funcion onLoaded    -->
+
+
+
