@@ -4,3 +4,34 @@
 <ng-template #elseImg>
   <img width="100" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
 </ng-template>
+
+<!-- Los input  @Input se utilizan para pasar informacion de padre a hijo
+Paso 1
+si se va a usar ngmodel se requiere imortar formsModule de @angular/forms en el app formsModule -->
+
+
+<!-- Paso2  En el app.component.ts
+export class AppComponent {
+  title = 'Store Mil';
+  imgParent = ''
+} -->
+
+
+<!-- Paso 3 en el app.component.html
+<p> <input type="text" [(ngModel)]="title"></p>
+<app-img [img]="imgParent"  [titulo]="title"></app-img> -->
+
+
+<!--  Paso 4  en el img.component.ts
+export class ImgComponent {
+  @Input() img: string = 'valor inicial';
+  @Input() titulo: string = 'My Store';
+}  -->
+
+
+<!-- Paso 5 en el img.component.html
+<h1>{{titulo}}</h1>
+<img width="200" [src]="img" alt="" *ngIf = "img; else elseImg">
+<ng-template #elseImg>
+  <img width="100" src="https://www.w3schools.com/howto/img_avatar.png" alt="">
+</ng-template> -->
