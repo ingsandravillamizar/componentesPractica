@@ -1,7 +1,9 @@
 <p> <input type="text" [(ngModel)]="title"></p>
 <app-img (loaded)="onLoaded($event)"   [img]="imgParent"  [titulo]="title"></app-img>
 
-<!-- (loaded)="Onloaded()" Escuchamos el evento loaded y mandamos a la funcion onLoaded    -->
+<p>
+  <app-product [producto]="product" *ngFor="let product of Products "></app-product>
 
+</p>
 
 
