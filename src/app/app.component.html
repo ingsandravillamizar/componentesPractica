@@ -1,9 +1,21 @@
-<p> <input type="text" [(ngModel)]="title"></p>
-<app-img (loaded)="onLoaded($event)"   [img]="imgParent"  [titulo]="title"></app-img>
 
+
+<p> <input type="text" [(ngModel)]="title"></p>
+
+<!-- componente Imagen -->
+<!-- Creo un botton que cuando este en true me muestre el componente y cuando este en falso pues va entrar a destruccion -->
+<button (click)="toggleImg()"> Toogle Img </button>
+<p>{{showImg}}</p>
+<app-img   *ngIf="showImg" (loaded)="onLoaded($event)"   [img]="imgParent"  [titulo]="title"></app-img>
+
+
+
+
+
+<!-- componente Producto -->
+<hr/>
 <p>
   <app-product [producto]="product" *ngFor="let product of Products "></app-product>
-
 </p>
 
 
