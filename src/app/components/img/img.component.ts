@@ -19,13 +19,10 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
 
   @Input() titulo: string = 'My Store';
 
-
   @Output() loaded = new EventEmitter<string>();
 
   imageDefault = 'https://forestal.cafe/img/cafe/coffee.png'
 
-  counter = 0;
-  counterFn: number | undefined;   //counter function
 
   constructor() {
     //before render
@@ -49,10 +46,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     //  before render     corre antes de Renderizarse
     //  Aqui si podemos correr cosas async  -- fetch   ej llamar un api
     //  Corre una sola vez
-    this.counterFn = window.setInterval( () =>{   //guardo en conuterFn
-       this.counter +=1;
-       console.log('run counter')
-    }, 1000 );  //funcion que corre cada segundo y va incrementando el contador
+
     console.log('ngOnInit...', 'imgValue => ', this.img)
    }
 
@@ -67,7 +61,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
    ngOnDestroy() {
     // delete -- once time   cuando eliminamos el componente,  no lo vemos en la interface
     console.log('ngOnDestroy');
-    window.clearInterval(this.counterFn)  //limpiar un intervalo es decir se detiene el contador
+
   }
 
   imgError(){

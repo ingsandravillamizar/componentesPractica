@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Product } from './models/product.model'
+
 
 
 @Component({
@@ -14,28 +14,7 @@ export class AppComponent {
   title = 'Store Mil';
   imgParent = ''   //Dejamos intencionalmente vacia para que en el hijo entre a error
   showImg = true;
-  Products: Product[] =[
-    {
-      id   : '1',
-      name : 'Yorki 3 meses',
-      image : "./assets/images/Bebe1.jpeg",
-      price: 1000000
-    },
 
-    {
-      id   : '2',
-      name : 'Yorki 3 meses',
-      image : "./assets/images/Bebe2.jpeg",
-      price: 1000000
-    },
-
-    {
-      id   : '3',
-      name : 'Yorki 3 meses',
-      image : "./assets/images/Bebe3.jpeg",
-      price: 1000000
-    },
-  ]
 
 
   onLoaded(img:string){
