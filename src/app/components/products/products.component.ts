@@ -31,6 +31,25 @@ export class ProductsComponent  implements OnInit {
       image : "./assets/images/Bebe3.jpeg",
       price: 1000000
     },
+    {
+      id   : '4',
+      name : 'Yorki 3 meses',
+      image : "./assets/images/Bebe3.jpeg",
+      price: 1000000
+    },
+    {
+      id   : '5',
+      name : 'Yorki 3 meses',
+      image : "./assets/images/Bebe3.jpeg",
+      price: 1000000
+    },
+
+    {
+      id   : '6',
+      name : 'Yorki 3 meses',
+      image : "./assets/images/Bebe3.jpeg",
+      price: 1000000
+    },
   ]
 
 
