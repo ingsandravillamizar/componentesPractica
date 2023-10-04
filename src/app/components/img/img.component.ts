@@ -38,8 +38,8 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     //before y durante render   corre antes y durante de Renderizarse
     //changes inputs    actuliza los cambios en los inputs
     // corre muchas veces, tantas veces como actulicemos los inputs   times
-    console.log('ngOnchanges...', 'imgValue => ', this.img)
-    console.log("imprimo los cambios", changes)
+    //console.log('ngOnchanges...', 'imgValue => ', this.img)
+    //console.log("imprimo los cambios", changes)
    }
 
    ngOnInit(): void {
@@ -47,7 +47,7 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
     //  Aqui si podemos correr cosas async  -- fetch   ej llamar un api
     //  Corre una sola vez
 
-    console.log('ngOnInit...', 'imgValue => ', this.img)
+    //console.log('ngOnInit...', 'imgValue => ', this.img)
    }
 
 
@@ -60,17 +60,17 @@ export class ImgComponent implements OnInit, OnChanges, AfterViewInit, OnDestroy
 
    ngOnDestroy() {
     // delete -- once time   cuando eliminamos el componente,  no lo vemos en la interface
-    console.log('ngOnDestroy');
+    //console.log('ngOnDestroy');
 
   }
 
   imgError(){
-      console.log("Hubo un error al carga imagen,  cargo la imagen interna por defecto")
-       this.img = this.imageDefault
+      //console.log("Hubo un error al carga imagen,  cargo la imagen interna por defecto")
+      this.img = this.imageDefault
   }
 
   imgLoaded(){
-    console.log("cargo imagen correctamente:  comunicacion interna" )
+    //console.log("cargo imagen correctamente:  comunicacion interna" )
     this.loaded.emit(this.img);  // trasmito la url para que el padre sepa cual se mostro
   }
 
