@@ -7,7 +7,7 @@
 <div class ="products--grid">
   <app-product
     [producto]="product"
-    *ngFor="let product of Products"
+    *ngFor="let product of products"
     (agregarProducto)="onAddToShoppingCart($event)"
   ></app-product>
 </div>
