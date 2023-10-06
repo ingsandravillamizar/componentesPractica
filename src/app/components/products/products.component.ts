@@ -14,6 +14,8 @@ export class ProductsComponent  implements OnInit {
   listaCarrito: Product[] = [];
   total = 0;
   products: Product[] = [];
+  today = new Date(2021,1,21);
+
 
   constructor( private _StoreService: StoreService ,
                private _ProductsService: ProductsService   )    //paso 2 para api  inyeccion de dependencia
