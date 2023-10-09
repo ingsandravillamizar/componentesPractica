@@ -12,6 +12,7 @@ import { NavComponent } from './components/nav/nav.component';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { TimeAgoPipe } from './pipes/time-ago.pipe';
 import { VowelsPipe } from './pipes/vowels.pipe';
+import { HighlightDirective } from './direcitves/highlight.directive';
 
 
 
@@ -24,7 +25,8 @@ import { VowelsPipe } from './pipes/vowels.pipe';
     NavComponent,
     ReversePipe,
     TimeAgoPipe,
-    VowelsPipe
+    VowelsPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
