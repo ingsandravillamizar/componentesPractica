@@ -2,4 +2,5 @@
 <app-img [img]="producto.image" ></app-img>
 <h2>{{producto.price | currency:'COP '}}</h2>
 <h1>{{producto.title}}</h1>
+<h1>{{producto.title | reverse  }}  </h1>
 <button (click)="onClickComprar()">Comprar</button>

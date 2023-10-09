@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { Product } from '../../models/product.model';
 import { StoreService } from '../../services/store.service';
 import { ProductsService } from '../../services/products.service';   //paso 1 para api
@@ -11,6 +11,8 @@ import { ProductsService } from '../../services/products.service';   //paso 1 pa
 
 export class ProductsComponent  implements OnInit {
 
+
+  @Input() titulo: string = 'My Store';
   listaCarrito: Product[] = [];
   total = 0;
   products: Product[] = [];

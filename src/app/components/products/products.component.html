@@ -2,7 +2,9 @@
 <h3>Cantidad: {{ listaCarrito.length }}</h3>
 <h3>Total a pagar: {{ total }}</h3>
 <p> Today: {{ today | date: 'short' }}</p>
-<p> Para enviar: {{ today | date: 'yyyy-MM-dd' }}</p>
+<p> Fecha de Envio: {{ today | date: 'yyyy-MM-dd' }}</p>
+<p> Tiempo transcurrido: {{ today | timeAgo }}</p>
+<p> {{ titulo | vowels }}</p>
 
 <div class ="products--grid">
   <app-product

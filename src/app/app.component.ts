@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 
 
 export class AppComponent {
-  title = 'Store Mil';
+  title = 'Store Milena';
   imgParent = ''   //Dejamos intencionalmente vacia para que en el hijo entre a error
   showImg = true;
 

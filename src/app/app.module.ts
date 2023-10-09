@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
 import { ProductsComponent } from './components/products/products.component';
 import { NavComponent } from './components/nav/nav.component';
+import { ReversePipe } from './pipes/reverse.pipe';
+import { TimeAgoPipe } from './pipes/time-ago.pipe';
+import { VowelsPipe } from './pipes/vowels.pipe';
 
 
 
@@ -18,7 +21,10 @@ import { NavComponent } from './components/nav/nav.component';
     ImgComponent,
     ProductComponent,
     ProductsComponent,
-    NavComponent
+    NavComponent,
+    ReversePipe,
+    TimeAgoPipe,
+    VowelsPipe
   ],
   imports: [
     BrowserModule,
